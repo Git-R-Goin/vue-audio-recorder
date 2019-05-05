@@ -20,9 +20,9 @@ export default {
   },
   methods: {
     upload() {
-      if (!this.record.url) {
-        return;
-      }
+      // if (!this.record.url) {
+      //   return;
+      // }
 
       this.$eventBus.$emit("start-upload", this.record.blob);
 

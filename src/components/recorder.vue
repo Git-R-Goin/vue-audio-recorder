@@ -308,7 +308,7 @@ export default {
   mounted() {
     this.$eventBus.$on("start-upload", payload => {
       // this.isUploading = true;
-      this.beforeUpload && this.beforeUpload("before upload", payload);
+      this.beforeUpload && this.beforeUpload(payload);
     });
 
     this.$eventBus.$on("end-upload", msg => {

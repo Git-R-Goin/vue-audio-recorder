@@ -24,7 +24,7 @@ export default {
       //   return;
       // }
 
-      this.$eventBus.$emit("start-upload", this.record.blob);
+      this.$eventBus.$emit("start-upload", this.record);
 
       // const data = new FormData()
       // data.append('audio', this.record.blob, `${this.filename}.mp3`)
